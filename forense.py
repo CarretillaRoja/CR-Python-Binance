@@ -7,7 +7,7 @@ import pandas as pd
 
 api_key='XXXX'
 api_secret='XXXX'
-client = Client(api_key, api_secret, {"timeout": 2000})
+client = Client(api_key, api_secret)
 
 coin = input('Introduce una moneda (p.ej.: ETHBTC): ')
 tiempo = int(input('¿Cuántos MINUTOS miramos hacia atrás? '))
@@ -24,7 +24,6 @@ def velas(vela_coin, interval, period):
         k[h][0]=horas(k[h][0])
     return k
 
-#kline=velas(coin, Client.KLINE_INTERVAL_1MINUTE, "1 hour ago")
 kline=velas(coin, Client.KLINE_INTERVAL_1MINUTE, "1 day ago")
 
 titles=['Time', 'Open', 'High', 'Low', 'Close', 'Volume', 'CloseTime', 'QuoteVolume', 'TradeNumber', 'NA1', 'NA2', 'NA3']
