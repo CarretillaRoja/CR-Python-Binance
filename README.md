@@ -10,3 +10,4 @@ If you find something can be improved, please let me know. Ideas welcomed!
 * Forense.py takes a look aome minutes back, so you can watch again what happenend during that pum/dump which made you rich/poor.
 * Moving_average_plot.py asks you for a symbol and then plots the price and a couple of EMAs.
 * Trading Monitoring.py shows all trades on Binance on realtime.
+* Plot_klines.py plots one (1) week of 15-minutes klines, along with two EMAs. It also plots the volume and its SMA.From there, you can implement a risky stategy, based on crossing EMAs.
