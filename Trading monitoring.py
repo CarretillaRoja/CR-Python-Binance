@@ -62,7 +62,7 @@ def process_message(msg):
         print('Refresing info...')
         time.sleep(5)
         print('\nRestarting socket...')
-        bm.start_aggtrade_socket('ETHBTC', process_message)
+        bm.start_multiplex_socket(coins_trade, process_message)
         clock_reset()
 
 
