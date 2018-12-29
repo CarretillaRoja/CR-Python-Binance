@@ -38,7 +38,7 @@ print ('Listed %s/%s coins.\n' % (len(pricelist_btc), len(pricelist_btc)))
 
 # Trade matrix used on the websockets
 coins_list=[x.lower() for x in coins_upper]
-coins_trade=[s + '@trade' for s in coins_list]
+coins_trade=[s + '@aggTrade' for s in coins_list]
 
 # Restarts webthe socket
 def clock_reset():
