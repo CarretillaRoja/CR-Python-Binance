@@ -1,5 +1,5 @@
 """
-This PoC plots the kindles of the lat week, volume included
+This PoC plots the kindles of the last year, volume included
 """
 
 from binance.client import Client
@@ -24,7 +24,7 @@ client = Client(api_key, api_secret)
 pair = (input("Input the coin, 'i.e.: ETH'): ") or 'ETH').upper() + 'BTC'
 
 
-kline_1w = np.array(client.get_historical_klines(pair, '15m', "1 week ago"))
+kline_1w = np.array(client.get_historical_klines(pair, '1d', "1 year ago"))
 df_1w = pd.DataFrame(kline_1w.reshape(-1,12),dtype=float, columns = ('Open Time', 'Open', 'High', 'Low', 'Close', 'Volume', 'Close Time', 'Quote asset volume', 'Number of trades', 'Taker buy base asset volume', 'Taker buy quote asset volume', 'Ignore'))
 
 ohlc = df_1w[['Close Time', 'Open', 'High', 'Low', 'Close']].copy()
