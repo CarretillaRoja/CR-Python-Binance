@@ -10,4 +10,9 @@ If you find something can be improved, please let me know. Ideas welcomed!
 * Forense.py takes a look some minutes back, so you can watch again what happenend during that pum/dump which made you rich/poor.
 * Moving_average_plot.py asks you for a symbol and then plots the price and a couple of EMAs.
 * Trading Monitoring.py shows all trades on Binance on realtime.
-* Plot_klines.py plots one (1) week of 15-minutes klines, along with two EMAs. It also plots the volume and its SMA.From there, you can implement a risky stategy, based on crossing EMAs.
+* Plot_klines.py plots one (1) week of 15-minutes klines, along with two EMAs. It also plots the volume and its SMA. From there, you can implement a risky stategy, based on crossing EMAs.
+* **(NEW!!)** Wallet Protector tracks your assets with a trailing stop-loss, so you can try to maximize your SL options. From here, you can either manually do it or add the code you need to do it automatically.
+
+If you feel this code worthy, donations are appreciated:
+- ETH: 0x56daD39CCd190D343682a903e0793E7427ECF287
+- LTC: MUP3PcZ2QXgJ7CC1cmKTt7jEZDcQPcjcNu
