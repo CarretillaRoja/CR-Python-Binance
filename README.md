@@ -1,4 +1,4 @@
-# Python-Binance
+# CR-Python-Binance
 
 Hi there,
 
