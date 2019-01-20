@@ -11,8 +11,7 @@ If you find something can be improved, please let me know. Ideas welcomed!
 * Moving_average_plot.py asks you for a symbol and then plots the price and a couple of EMAs.
 * Trading Monitoring.py shows all trades on Binance on realtime.
 * Plot_klines.py plots one (1) week of 15-minutes klines, along with two EMAs. It also plots the volume and its SMA. From there, you can implement a risky stategy, based on crossing EMAs.
-* **(NEW!!)** Wallet Protector tracks your assets with a trailing stop-loss, so you can try to maximize your SL options. From here, you can either manually do it or add the code you need to do it automatically.
-* **(NEW!!)** X.A.V.I is a simulation PoC to see wether or not it makes sense to buy tokens after a little pump of X% and sell it after a fixed period of time.
+* **(NEW!!)** Wallet Protector tracks your assets with a trailing stop-loss, so you can try to maximize your SL options. From here, you can either manually do it or add the code you need to do it 
 
 If you feel this code worthy, donations are appreciated:
 - ETH: 0x56daD39CCd190D343682a903e0793E7427ECF287
