@@ -155,7 +155,7 @@ def process_message(msg):
                 df.loc[pair, 'Profit'] = ((100 * current_price_float / df.loc[pair, 'BuyPrice'])*(1-0.0015))-100
                 notification = '%19s | %8s | P %s | SL %s | %5.2f%% | %5.0f tokens %6s | %s' % ((datetime.datetime.fromtimestamp(float(data['E'])/1000).strftime("%Y-%m-%d %H:%M:%S"), pair, current_price_str, df.loc[pair, 'SL_TRIG_str'], df.loc[pair, 'Profit'], float(data['q']), mov1, mov2))
                 print(notification)
-                #bot.sendMessage(chat_id=171502119, text=notification) # Uncomment to enable Telegram notification
+                #bot.sendMessage(chat_id=XXX, text=notification) # Uncomment to enable Telegram notification
 
             elif current_price_float > df.loc[pair, 'BestPrice']:
                 df.loc[pair, 'SL_SELL_float'] = round(current_price_float * df.loc[pair, 'SL_Limit_float'], df.loc[pair, 'Precision'])
@@ -165,7 +165,7 @@ def process_message(msg):
                 df.loc[pair, 'Profit'] = ((100 * current_price_float / df.loc[pair, 'BuyPrice'])*(1-0.0015))-100
                 notification = '%19s | %8s | P %s | SL %s | %5.2f%% | %5.0f tokens %6s | %s' % ((datetime.datetime.fromtimestamp(float(data['E'])/1000).strftime("%Y-%m-%d %H:%M:%S"), pair, current_price_str, df.loc[pair, 'SL_TRIG_str'], df.loc[pair, 'Profit'], float(data['q']), mov1, mov2))
                 print(notification)
-                #bot.sendMessage(chat_id=171502119, text=notification) # Uncomment to enable Telegram notification
+                #bot.sendMessage(chat_id=XXX, text=notification) # Uncomment to enable Telegram notification
                 df.loc[pair, 'BestPrice'] = current_price_float
 
             elif current_price_float == df.loc[pair, 'BestPrice']:
