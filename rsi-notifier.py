@@ -73,7 +73,6 @@ print ('RSI thresholds: %d - %d\n' % (RSI_sup, RSI_inf))
 while True:
     df = {}
     for name in coins_upper:
-        print(name)
         df[name] = pd.DataFrame(np.array(client.get_historical_klines(name, timeframe, "1 week ago")).reshape(-1,12),dtype=float, columns = ('Open Time', 'Open', 'High', 'Low', 'Close', 'Volume', 'Close Time', 'Quote asset volume', 'Number of trades', 'Taker buy base asset volume', 'Taker buy quote asset volume', 'Ignore'))
         df[name] = df[name].apply(pd.to_numeric, errors='ignore')
         df[name]['RSI'] = talib.RSI(df[name]['Close'], timeperiod=14)
@@ -81,16 +80,8 @@ while True:
         if last_RSI > RSI_sup:
             message = ('%s%.19s | %9s | RSI %2.0f%s' % (color.RED, datetime.datetime.now(), name, last_RSI, color.END))
             print (message)
-            #bot.sendMessage(chat_id=XXXX, text=notification) # Uncomment to enable Telegram notification
+            #bot.sendMessage(chat_id=XXXX, text=message) # Uncomment to enable Telegram notification
         elif (last_RSI < RSI_inf and last_RSI > 0):
             message = ('%s%.19s | %9s | RSI %2.0f%s' % (color.GREEN, datetime.datetime.now(), name, last_RSI, color.END))
             print (message)
-            #bot.sendMessage(chat_id=XXXX, text=notification) # Uncomment to enable Telegram notification
-        elif last_RSI ==0:
-            message = ('%.19s | %9s | RSI %2.0f' % (datetime.datetime.now(), name, last_RSI))
-            print (message)
-            #bot.sendMessage(chat_id=XXXX, text=notification) # Uncomment to enable Telegram notification
-        else:
-            message = ('%.19s | %9s | RSI %2.0f' % (datetime.datetime.now(), name, last_RSI))
-            print (message)
-            #bot.sendMessage(chat_id=XXXX, text=notification) # Uncomment to enable Telegram notification
+            #bot.sendMessage(chat_id=XXXX, text=message) # Uncomment to enable Telegram notification
