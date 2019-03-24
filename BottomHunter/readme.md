@@ -1,5 +1,8 @@
 ## Bottom Hunter
 
+![BH](https://github.com/CarretillaRoja/CR-Python-Binance/blob/master/BottomHunter/BottomHunter.jpg?raw=true)
+
+
 This piece of code allows you to track some coins for the minimum price. It works this way:
 - It shows your the amount of BTC available and asks how many you will use.
 - Asks for some coins you want to buy. It shows their price and asks at what price you want to start watching them. Eg: 100 satoshis.
