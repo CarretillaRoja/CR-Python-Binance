@@ -13,7 +13,7 @@ If you find something can be improved, please let me know. Ideas welcomed!
 * Plot_klines.py plots one (1) week of 15-minutes klines, along with two EMAs. It also plots the volume and its SMA. From there, you can implement a risky stategy, based on crossing EMAs.
 * RSI notifier lets you know when a token is below or above a pre-defined RSI value.
 * Wallet Protector tracks your assets with a trailing stop-loss, so you can try to maximize your SL options. From here, you can either manually do it or add the code you need to do it.
-* **(NEW!!)** Bottom Hunter tracks falling prices to optimize when to buy.
+* **(NEW!!)** Bottom Hunter tracks falling prices to optimize when to buy. More details in folder.
 
 If you feel this code worthy, donations are appreciated:
 - ETH: 0x56daD39CCd190D343682a903e0793E7427ECF287
