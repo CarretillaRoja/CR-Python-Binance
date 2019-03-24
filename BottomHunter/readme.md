@@ -1,4 +1,4 @@
-Bottom Hunter
+## Bottom Hunter
 
 This piece of code allows you to track some coins for the minimum price. It works this way:
 - It shows your the amount of BTC available and asks how many you will use.
